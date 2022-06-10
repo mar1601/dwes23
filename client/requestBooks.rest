@@ -3,24 +3,33 @@ POST http://localhost:3000/books/add
 Content-Type: application/json
 
 {
-  "_id": 334,"title": "Android in Action, Second Edition",
+  "_id": 1234,"title": "institut",
   "isbn": "3333", "categories": ["Java","test"]
 }
 
 ####
-GET http://localhost:3000/books/0001
+GET http://localhost:3000/books/19330006777
 
 ####
 
-PUT http://localhost:3000/books/0001
+PUT http://localhost:3000/books/2222
 Content-Type: application/json
 
 {
-"title": "Holapaola"
+"title": "InstitutMVM"
 }
 
 ###
-DELETE http://localhost:3000/books/0001
+DELETE http://localhost:3000/books/2222
+
+###
+POST http://localhost:3000/alquiler/add
+Content-Type: application/json
+
+{
+"_id": 299, "title":"InstiPaola"
+,"isbn": "444","data":25
+}
 
 ###
 GET http://localhost:3000/books/Java

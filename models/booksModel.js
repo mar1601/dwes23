@@ -42,7 +42,9 @@ class booksModel {
             throw new Error(messagesapp.book_error_update);
      
             books.updateBook(id,data);
+
     }
+
 
     async javaCat(){
         console.log(`---> getModel::javaCat`);
@@ -52,6 +54,8 @@ class booksModel {
             throw new Error(messagesapp.book_dosent_exist);
         return _book;
     }
+
+  
 
 }
 

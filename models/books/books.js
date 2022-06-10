@@ -31,6 +31,11 @@ class Books {
 
      
     }
+    async getAlquiler(id,isbn,data) {
+        console.log(`---> books::getAlquiler  = ${id,isbn,data}`);
+
+        return await this.mgfl.getData(id,isbn,data);
+    }
 
     async javaCat(){
         console.log(`---> books::javaCatBook`);

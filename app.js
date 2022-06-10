@@ -14,6 +14,8 @@ app.use((req,res,next)=>{
 
 app.use('/books',booksRouter);
 
+app.use('/alquiler',booksRouter);
+
 
 app.use('*',errorRouter);
 app.use(clientErrorHandler);

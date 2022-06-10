@@ -12,6 +12,7 @@ const client = new MongoClient(url);
 const dbName = 'bddmar';
 const db = client.db(dbName);
 const collection = db.collection('books');
+const coll = db.collection('alquiler');
 
 export class ManagerFs {
 
@@ -49,6 +50,17 @@ export class ManagerFs {
         console.log('Updated documents =>', updateResult);
     }
 
+    async postAlquiler(_id,_isbn,_data) {
+        await client.connect();
+        console.log('Connected successfully to server');
+      
+        const  = await collection.findOne({_id,_isbn,_data});
+        console.log('Found documents =>', findResult);
+        
+        return ;
+        
+        
+    }
 
     async categoryJava(){
 
